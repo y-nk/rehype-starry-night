@@ -1,7 +1,7 @@
 {
   "name": "rehype-starry-night",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "syntaxhighlight using starry-night",
   "main": "index.js",
   "files": [
@@ -11,7 +11,11 @@
     "postversion": "git push --follow-tags"
   },
   "keywords": [
-    "rehype", "plugin", "starry-night", "syntax", "hightlight"
+    "rehype",
+    "plugin",
+    "starry-night",
+    "syntax",
+    "hightlight"
   ],
   "author": "julien barbay <julien.barbay@gmail.com>",
   "license": "MIT",
