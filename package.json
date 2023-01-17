@@ -1,0 +1,22 @@
+{
+  "name": "rehype-starry-night",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "syntaxhighlight using starry-night",
+  "main": "index.js",
+  "files": [
+    "./index.js"
+  ],
+  "scripts": {
+    "postversion": "git push --follow-tags"
+  },
+  "keywords": [
+    "rehype", "plugin", "starry-night", "syntax", "hightlight"
+  ],
+  "author": "julien barbay <julien.barbay@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@wooorm/starry-night": "^1.5.0",
+    "hast-util-select": "^5.0.4"
+  }
+}
