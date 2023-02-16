@@ -2,13 +2,18 @@ import { selectAll } from "hast-util-select"
 import { createStarryNight, all } from '@wooorm/starry-night';
 
 export default function rehypeStarryNight(args = {}) {
+  let factory = null
   let highlighter = null
 
   const { grammars = all, ...options } = args
 
   return async function transform(tree) {
+    if (!factory) {
+      factory = createStarryNight(grammars, options)
+    }
+    
     if (!highlighter) {
-      highlighter = await createStarryNight(grammars, options)
+      highlighter = await factory
     }
 
     selectAll('code', tree)
